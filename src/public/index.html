@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Socket.io</title>
+</head>
+<body>
+    <h1>Chatting 🐾</h1>
+    <div class="chat-container">
+        <div class="chat-window">
+            <div id="chat-output" class="chat-output"></div>
+            <div id="chat-actions" class="chat-actions"></div>
+        </div>
+        <input type="text" id="chat-username" placeholder="Username">
+        <input type="text" id="chat-message" placeholder="Message">
+        <button id="send-message" class="send-message">Send</button>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="chat.js"></script>
+</body>
+</html>
